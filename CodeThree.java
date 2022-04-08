@@ -1,4 +1,4 @@
-public class pskhstr {
+public class CodeThree {
 
 public static void main(String[] args) throws Exception {
     String str = "abcdef";

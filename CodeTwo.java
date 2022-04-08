@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 
-class papapa{
+class CodeTwo{
 public static void main(String []args) { 
 	ArrayList<String>al=new ArrayList<>();
 	String str="abc";
@@ -18,6 +18,4 @@ public static ArrayList<String> permutation(ArrayList<String>al,String prefix, S
     }
     return al;
 }
-
-
 }

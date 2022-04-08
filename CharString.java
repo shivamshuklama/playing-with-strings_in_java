@@ -1,7 +1,7 @@
 import java.io.*;
 import java.util.ArrayList;
 import java.util.HashSet;
-public class CharString {
+public class CodeOne {
 public static void main(String []args)throws IOException{
 	BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
 	ArrayList<String>al=new ArrayList<String>();
@@ -23,10 +23,7 @@ public static void main(String []args)throws IOException{
 		
 	}
 	for(String ss:ht)
-		System.out.println(ss);
-	
-	
-	
+		System.out.println(ss);	
 }
 public static ArrayList<String>perm(ArrayList<String>al,String prefix,String s){
 	int n=s.length();
@@ -34,16 +31,8 @@ public static ArrayList<String>perm(ArrayList<String>al,String prefix,String s){
 		al.add(prefix);
 	else{
 		for(int i=0;i<n;i++)
-		perm(al,prefix+s.charAt(i),s.substring(0, i)+s.substring(i+1, n));
-		
-		
-	}
-	
-	
-	
-	return al;
-	
-	
-	
+		perm(al,prefix+s.charAt(i),s.substring(0, i)+s.substring(i+1, n));		
+	}	
+	return al;	
 }
 }
